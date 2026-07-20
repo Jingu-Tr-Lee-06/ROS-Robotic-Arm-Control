@@ -8,4 +8,5 @@ July 20, 2026
 - Clone the repository to WSL using `git clone`
 - Connect to Ubuntu WSL via VS Code
 - Integrate with GitHub and commit
+- ROS2 설치 - jazzy
 ---
