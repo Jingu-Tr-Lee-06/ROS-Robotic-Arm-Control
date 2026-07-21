@@ -1,0 +1,57 @@
+[0.000000] (-) TimerEvent: {}
+[0.000923] (gong_basic) JobQueued: {'identifier': 'gong_basic', 'dependencies': OrderedDict()}
+[0.000970] (gong_basic) JobStarted: {'identifier': 'gong_basic'}
+[0.100104] (-) TimerEvent: {}
+[0.200759] (-) TimerEvent: {}
+[0.301289] (-) TimerEvent: {}
+[0.401807] (-) TimerEvent: {}
+[0.502181] (-) TimerEvent: {}
+[0.602845] (-) TimerEvent: {}
+[0.703476] (-) TimerEvent: {}
+[0.803998] (-) TimerEvent: {}
+[0.904679] (-) TimerEvent: {}
+[1.005402] (-) TimerEvent: {}
+[1.105921] (-) TimerEvent: {}
+[1.206485] (-) TimerEvent: {}
+[1.307028] (-) TimerEvent: {}
+[1.407709] (-) TimerEvent: {}
+[1.508403] (-) TimerEvent: {}
+[1.608852] (-) TimerEvent: {}
+[1.709191] (-) TimerEvent: {}
+[1.809694] (-) TimerEvent: {}
+[1.910121] (-) TimerEvent: {}
+[2.010541] (-) TimerEvent: {}
+[2.110898] (-) TimerEvent: {}
+[2.211311] (-) TimerEvent: {}
+[2.311674] (-) TimerEvent: {}
+[2.379066] (gong_basic) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build', '--no-deps', 'symlink_data'], 'cwd': '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'leeji', 'GIT_ASKPASS': '/home/leeji/.vscode-server/bin/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{0caa0dad-35be-5f56-a8ff-afceeeaa6101}', 'HOME': '/home/leeji', 'OLDPWD': '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS', 'TERM_PROGRAM_VERSION': '1.129.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5a335017-e49d-4f37-8f13-66f44ab5e4be.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/leeji/.vscode-server/bin/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/leeji/.vscode-server/bin/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'leeji', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/518_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/leeji/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/leeji/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/leeji/.vscode-server/bin/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Users/leeji/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/leeji/AppData/Roaming/npm:/mnt/c/Users/leeji/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/leeji/AppData/Local/Android/Sdk/emulator:/snap/bin', 'WT_SESSION': 'a82b73f7-98c1-46a9-99b5-4901e197d2cd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ed9a00b796.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic', 'COPILOT_DEBUG_NONCE': '73c7fc28ba385a34f483fffe75aac75e', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[2.411844] (-) TimerEvent: {}
+[2.512289] (-) TimerEvent: {}
+[2.612791] (-) TimerEvent: {}
+[2.713218] (-) TimerEvent: {}
+[2.799701] (gong_basic) StdoutLine: {'line': b'running develop\n'}
+[2.813468] (-) TimerEvent: {}
+[2.913786] (-) TimerEvent: {}
+[3.014197] (-) TimerEvent: {}
+[3.045377] (gong_basic) StdoutLine: {'line': b'running egg_info\n'}
+[3.066101] (gong_basic) StdoutLine: {'line': b'writing gong_basic.egg-info/PKG-INFO\n'}
+[3.066539] (gong_basic) StdoutLine: {'line': b'writing dependency_links to gong_basic.egg-info/dependency_links.txt\n'}
+[3.066695] (gong_basic) StdoutLine: {'line': b'writing entry points to gong_basic.egg-info/entry_points.txt\n'}
+[3.066921] (gong_basic) StdoutLine: {'line': b'writing requirements to gong_basic.egg-info/requires.txt\n'}
+[3.067180] (gong_basic) StdoutLine: {'line': b'writing top-level names to gong_basic.egg-info/top_level.txt\n'}
+[3.112372] (gong_basic) StdoutLine: {'line': b"reading manifest file 'gong_basic.egg-info/SOURCES.txt'\n"}
+[3.114404] (-) TimerEvent: {}
+[3.123295] (gong_basic) StdoutLine: {'line': b"writing manifest file 'gong_basic.egg-info/SOURCES.txt'\n"}
+[3.150360] (gong_basic) StdoutLine: {'line': b'running build_ext\n'}
+[3.150605] (gong_basic) StdoutLine: {'line': b'Creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong-basic.egg-link (link to .)\n'}
+[3.151463] (gong_basic) StdoutLine: {'line': b'Installing class_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic\n'}
+[3.152433] (gong_basic) StdoutLine: {'line': b'Installing simple_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic\n'}
+[3.154971] (gong_basic) StdoutLine: {'line': b'\n'}
+[3.155169] (gong_basic) StdoutLine: {'line': b'Installed /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic\n'}
+[3.155239] (gong_basic) StdoutLine: {'line': b'running symlink_data\n'}
+[3.214630] (-) TimerEvent: {}
+[3.290455] (gong_basic) CommandEnded: {'returncode': 0}
+[3.314958] (-) TimerEvent: {}
+[3.415414] (-) TimerEvent: {}
+[3.437108] (gong_basic) JobEnded: {'identifier': 'gong_basic', 'rc': 0}
+[3.438768] (-) EventReactorShutdown: {}

@@ -8,6 +8,7 @@ setup.py
 ../../build/gong_basic/gong_basic.egg-info/top_level.txt
 ../../build/gong_basic/gong_basic.egg-info/zip-safe
 gong_basic/__init__.py
+gong_basic/class_pub.py
 gong_basic/simple_pub.py
 gong_basic.egg-info/PKG-INFO
 gong_basic.egg-info/SOURCES.txt

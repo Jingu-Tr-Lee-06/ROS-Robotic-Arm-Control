@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             "simple_pub = gong_basic.simple_pub:main",
+            "class_pub = gong_basic.class_pub:main",
         ],
     },
 )
