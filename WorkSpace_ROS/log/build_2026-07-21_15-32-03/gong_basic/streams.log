@@ -1,0 +1,22 @@
+[1.975s] Invoking command in '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic': PYTHONPATH=/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build --no-deps symlink_data
+[2.216s] running develop
+[2.344s] running egg_info
+[2.356s] writing gong_basic.egg-info/PKG-INFO
+[2.356s] writing dependency_links to gong_basic.egg-info/dependency_links.txt
+[2.356s] writing entry points to gong_basic.egg-info/entry_points.txt
+[2.356s] writing requirements to gong_basic.egg-info/requires.txt
+[2.357s] writing top-level names to gong_basic.egg-info/top_level.txt
+[2.382s] reading manifest file 'gong_basic.egg-info/SOURCES.txt'
+[2.383s] writing manifest file 'gong_basic.egg-info/SOURCES.txt'
+[2.396s] running build_ext
+[2.396s] Creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong-basic.egg-link (link to .)
+[2.396s] Installing class_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+[2.396s] Installing class_sub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+[2.396s] Installing header_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+[2.396s] Installing header_sub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+[2.397s] Installing mtsub_node script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+[2.397s] Installing simple_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+[2.397s] 
+[2.397s] Installed /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic
+[2.397s] running symlink_data
+[2.468s] Invoked command in '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic' returned '0': PYTHONPATH=/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build --no-deps symlink_data

@@ -1,0 +1,52 @@
+running develop
+Removing /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong-basic.egg-link (link to .)
+running egg_info
+writing ../../build/gong_basic/gong_basic.egg-info/PKG-INFO
+writing dependency_links to ../../build/gong_basic/gong_basic.egg-info/dependency_links.txt
+writing entry points to ../../build/gong_basic/gong_basic.egg-info/entry_points.txt
+writing requirements to ../../build/gong_basic/gong_basic.egg-info/requires.txt
+writing top-level names to ../../build/gong_basic/gong_basic.egg-info/top_level.txt
+reading manifest file '../../build/gong_basic/gong_basic.egg-info/SOURCES.txt'
+writing manifest file '../../build/gong_basic/gong_basic.egg-info/SOURCES.txt'
+running build
+running build_py
+copying gong_basic/mtsub_node.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+copying gong_basic/simple_pub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+copying gong_basic/header_sub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+copying gong_basic/class_sub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+copying gong_basic/header_pub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+copying gong_basic/move_turtle.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+copying gong_basic/class_pub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+running install
+running install_lib
+creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/mtsub_node.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/simple_pub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/header_sub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/class_sub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/header_pub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/__init__.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/move_turtle.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/class_pub.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/mtsub_node.py to mtsub_node.cpython-312.pyc
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/simple_pub.py to simple_pub.cpython-312.pyc
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/header_sub.py to header_sub.cpython-312.pyc
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/class_sub.py to class_sub.cpython-312.pyc
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/header_pub.py to header_pub.cpython-312.pyc
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/move_turtle.py to move_turtle.cpython-312.pyc
+byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/class_pub.py to class_pub.cpython-312.pyc
+running install_data
+copying resource/gong_basic -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/ament_index/resource_index/packages
+copying package.xml -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/gong_basic
+copying launch/hello.launch.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/gong_basic/launch
+running install_egg_info
+Copying ../../build/gong_basic/gong_basic.egg-info to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic-0.0.0-py3.12.egg-info
+running install_scripts
+Installing class_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+Installing class_sub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+Installing header_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+Installing header_sub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+Installing mtsub_node script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+Installing simple_pub script to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/gong_basic
+writing list of installed files to '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/install.log'
