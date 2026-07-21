@@ -1,0 +1,32 @@
+[2.098s] Invoking command in '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/src/gong_basic': PYTHONPATH=/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gong_basic build --build-base /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build install --record /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/install.log --install-scripts $base/lib/gong_basic --single-version-externally-managed install_data
+[2.433s] running egg_info
+[2.433s] creating ../../build/gong_basic/gong_basic.egg-info
+[2.461s] writing ../../build/gong_basic/gong_basic.egg-info/PKG-INFO
+[2.461s] writing dependency_links to ../../build/gong_basic/gong_basic.egg-info/dependency_links.txt
+[2.461s] writing requirements to ../../build/gong_basic/gong_basic.egg-info/requires.txt
+[2.462s] writing top-level names to ../../build/gong_basic/gong_basic.egg-info/top_level.txt
+[2.462s] writing manifest file '../../build/gong_basic/gong_basic.egg-info/SOURCES.txt'
+[2.504s] reading manifest file '../../build/gong_basic/gong_basic.egg-info/SOURCES.txt'
+[2.505s] writing manifest file '../../build/gong_basic/gong_basic.egg-info/SOURCES.txt'
+[2.505s] running build
+[2.505s] running build_py
+[2.506s] creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build
+[2.506s] creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib
+[2.506s] creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+[2.506s] copying gong_basic/__init__.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic
+[2.506s] running install
+[2.513s] running install_lib
+[2.536s] creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+[2.536s] copying /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build/lib/gong_basic/__init__.py -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic
+[2.537s] byte-compiling /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic/__init__.py to __init__.cpython-312.pyc
+[2.537s] running install_data
+[2.538s] creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/ament_index
+[2.538s] creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/ament_index/resource_index
+[2.538s] creating /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/ament_index/resource_index/packages
+[2.539s] copying resource/gong_basic -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/ament_index/resource_index/packages
+[2.539s] copying package.xml -> /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/share/gong_basic
+[2.539s] running install_egg_info
+[2.569s] Copying ../../build/gong_basic/gong_basic.egg-info to /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages/gong_basic-0.0.0-py3.12.egg-info
+[2.570s] running install_scripts
+[2.731s] writing list of installed files to '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/install.log'
+[2.773s] Invoked command in '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/src/gong_basic' returned '0': PYTHONPATH=/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gong_basic build --build-base /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/build install --record /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/install.log --install-scripts $base/lib/gong_basic --single-version-externally-managed install_data
