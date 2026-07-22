@@ -35,6 +35,8 @@ setup(
             "header_sub = gong_basic.header_sub:main",
             "mtsub_node = gong_basic.mtsub_node:main",
             "move_turtle = gong_basic.move_turtle:main",
+            "qos_test_pub = gong_basic.qos_test_pub:main",
+            "qos_test_sub = gong_basic.qos_test_sub:main",
         ],
     },
 )

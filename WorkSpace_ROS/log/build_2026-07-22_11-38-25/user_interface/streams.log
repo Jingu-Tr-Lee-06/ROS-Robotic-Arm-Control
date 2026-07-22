@@ -1,0 +1,10 @@
+[0.156s] Invoking command in '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/user_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic:/opt/ros/jazzy /usr/bin/cmake /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/user_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/user_interface
+[0.225s] [33mCMake Warning:
+[0.226s]   Ignoring extra path from command line:
+[0.226s] 
+[0.226s]    "/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/user_interface"
+[0.226s] 
+[0.226s] [0m
+[0.226s] [0mCMake Error: The source directory "/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/user_interface" does not appear to contain CMakeLists.txt.
+[0.226s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.229s] Invoked command in '/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/user_interface' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/gong_basic:/opt/ros/jazzy /usr/bin/cmake /home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/user_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/install/user_interface
