@@ -467,3 +467,75 @@ def generate_launch_description():
 ```
 
 * **결과 검증**: `ros2 run rqt_graph rqt_graph` 실행을 통해 1:N 토픽 분기 및 다중 수신 그래픽 구조가 시각적으로 정상 동작함을 확인.
+
+
+
+1. ROS 2 통신 품질 관리: QoS (Quality of Service)ROS 2는 기본 통신 미들웨어로 DDS(Data Distribution Service)를 사용하므로, 네트워크 환경이나 로봇 시스템의 특성에 맞게 데이터 통신 방식을 세밀하게 제어할 수 있는 QoS 정책을 제공합니다.주요 QoS 정책 항목History (기록 정책)KEEP_ALL: 발행되는 모든 데이터를 보관합니다.KEEP_LAST: 설정된 depth 크기만큼의 최신 데이터만 보관합니다.Reliability (신뢰성 정책)RELIABLE: 데이터 수신을 철저히 보장하며 누락을 방지합니다 (데이터 수신 집중).BEST_EFFORT: 데이터 손실 가능성이 있더라도 빠른 전송 속도를 중시합니다.Durability (내구성 정책)TRANSIENT_LOCAL: 구독(Subscription) 생성 이전의 과거 데이터까지 보관하여 전달합니다.VOLATILE: 구독 생성 이전의 데이터는 무효화하고 이후 데이터만 처리합니다.Deadline (마감 시간)정해진 주기 안에 데이터가 정상적으로 수발신되지 않을 경우 EventCallback을 실행합니다.Lifespan (수명)생성된 데이터가 정해진 주기 안에서만 유효하다고 판정하며, 시간이 지나면 폐기합니다.Liveliness (활성 상태)정해진 주기 안에 노드나 토픽이 살아있는지(생사 여부)를 확인합니다.코드 구현 예시 (Python - rclpy) > ```pythonself.qos_profile = QoSProfile(history=QoSHistoryPolicy.KEEP_ALL,reliability=QoSReliabilityPolicy.RELIABLE,durability=QoSDurabilityPolicy.TRANSIENT_LOCAL)센서 데이터 등의 경우 미리 정의된 프리셋인 `qos_profile_sensor_data`를 임포트하여 간편하게 사용할 수도 있습니다.
+2. ROS 2의 시간(Time) 체계로봇 시스템에서는 정확한 동기화와 타임스탬프 기록이 필수적입니다. ROS 2는 세 가지 기준의 시간을 지원합니다.ROS_TIME노드가 생성된 시점을 기준으로 하는 시간입니다.시뮬레이션 환경 등에서는 use_sim_time 파라미터를 통해 가상 시간(/clock 토픽 발행)을 사용할 수 있습니다.SYSTEM_TIME시스템(PC 등)의 실제 물리적 시간입니다. 시스템 간 동기화가 안 될 수 있어 sudo ntpdate ntp.ubuntu.com 등을 통한 시간 동기화가 필요할 수 있습니다.STEADY_TIME하드웨어 타임아웃 등을 측정하기 위해 사용하는 시간입니다. 무조건 단조증가(Monotonically increasing)한다는 특성이 있어 시스템 시간이 변경되어도 영향을 받지 않습니다.3. ROS 2 표준 단위 및 좌표계ROS는 데이터 교환 시 혼선을 줄이기 위해 국제단위계(SI Unit)를 표준으로 채택하고 있습니다.SI 단위계길이($m$), 질량($Kg$), 시간($s$), 전류($A$), 평면각($rad$), 주파수($Hz$), 온도($^\circ C$), 전압($V$)좌표계 및 표현 방식오른손 법칙을 따르며, 반시계 방향이 정방향(+)입니다.기본적으로 ENU(East, North, Up) 좌표계를 사용하며, 축은 $x$ (빨강), $y$ (초록), $z$ (파랑)로 표현됩니다.카메라 등 좌표계 표현 방식이 다른 경우 접미사로 _optical, _ned 등을 붙여 구분합니다.회전 표현은 주로 쿼터니언(Quaternion), 회전 매트릭스, 고정축 방식을 사용하며, 특이점(Gimbal lock) 문제가 있는 오일러 각도는 권장하지 않습니다.4. 파라미터(Parameter)와 런치(Launch) 파일다수의 노드와 로봇(예: 터틀심 여러 마리)을 구동할 때는 설정값을 관리하는 파라미터와 이를 일괄 실행하는 런치 시스템이 핵심적인 역할을 담당합니다.네임스페이스(Namespace) 적용 방법동일한 노드를 여러 개 띄울 때 이름 충돌을 방지하기 위해 네임스페이스를 할당합니다.CLI 명령어 방식--ros-args --remap __ns:=/robot1 형태로 실행 시 직접 인자를 전달합니다.Launch 파일 방식    * Python 기반 런치 파일 내에서 Node 객체를 선언할 때 namespace 인자를 직접 지정하거나 환경변수를 활용할 수 있습니다.예시 코드 구조:PythonNode(
+    namespace='robot1',
+    package='turtlesim',
+    executable='turtlesim_node',
+    parameters=[param_dir] # 파라미터 파일 경로 연동 가능
+)
+
+제공된 교안 및 학습 자료를 바탕으로 ROS 2의 통신 구조와 핵심 통신 방식(메커니즘), 그리고 QoS(서비스 품질) 설정에 대해 체계적으로 정리해 드립니다.
+
+1. ROS 2 통신 아키텍처 및 핵심 구조
+ROS 2는 중앙 관리자(roscore)에 의존하던 ROS 1과 달리, DDS(Data Distribution Service) 표준을 미들웨어로 채택하여 분산형 P2P 구조를 가집니다.
+
+API 및 미들웨어 계층 구조
+User Code (사용자 애플리케이션): 개발자가 작성하는 노드와 제어 로직
+
+RCL (ROS Client Library): rclcpp(C++), rclpy(Python) 등 언어별 클라이언트 API
+
+RMW (ROS Middleware Interface): 특정 DDS 구현체에 종속되지 않도록 통신 계층을 추상화한 C 기반 표준 인터페이스
+
+DDS Vendor Layer: Fast DDS, Cyclone DDS, Connext DDS 등 실제 네트워크 트래픽과 데이터 전송을 담당하는 엔진
+
+2. ROS 2의 4가지 주요 통신 메커니즘
+ROS 2 노드 간 상호작용은 데이터의 성격과 목적에 따라 네 가지 방식으로 나뉩니다.
+
+① 토픽 (Topic) - 단방향 비동기 스트리밍
+특징: 퍼블리셔(Publisher)가 데이터를 발행(Publish)하고, 서브스크라이버(Subscriber)가 구독(Subscribe)하는 비동기식 1:N / N:N 다중 통신입니다.
+
+용도: 센서 데이터(LiDAR, 카메라 등)나 로봇의 상태 정보처럼 주기적으로 연속해서 흘러 들어오는 데이터를 전송할 때 사용합니다.
+
+② 서비스 (Service) - 동기식 요청/응답
+특징: 클라이언트(Client)가 서버(Server)에 요청(Request)을 보내고, 서버가 처리를 마친 뒤 응답(Response)을 반환하는 동기식 1:1 통신입니다.
+
+용도: 터틀심 스폰 명령어(turtlesim/srv/Spawn)나 펜 색상 변경(turtlesim/srv/SetPen)처럼 일회성 명령 및 결과 확인이 필요할 때 사용합니다.
+
+③ 액션 (Action) - 비동기식 장기 실행 제어
+특징: 서비스와 유사하지만, 목표(Goal) 요청, 중간 피드백(Feedback) 수신, 최종 결과(Result) 반환의 구조를 가집니다. 특히 실행 도중 언제든지 명령을 취소(Cancel)할 수 있습니다.
+
+용도: 로봇의 자율 주행(Navigation)이나 로봇 팔(Manipulator) 제어 등 시간이 오래 걸리며 중간 진행 상황 모니터링이 필요한 작업에 적합합니다.
+
+④ 파라미터 (Parameter) - 노드 설정 관리
+특징: 노드의 성격이나 동작 속성(값)을 설정하고 변경하는 통신 방식입니다.
+
+용도: 런치 파일이나 CLI 환경에서 노드의 변수 값을 동적으로 주입하거나 변경할 때 사용합니다.
+
+3. 통신 품질 제어: QoS (Quality of Service)
+ROS 2는 DDS 기반이므로 네트워크 환경과 로봇의 목적에 맞추어 통신 속도나 신뢰성을 세밀하게 튜닝할 수 있는 QoS 정책을 제공합니다.
+
+History (기록 정책)
+
+KEEP_ALL: 발행되는 모든 데이터를 보관합니다.
+
+KEEP_LAST: 설정된 depth 크기만큼의 최신 데이터만 보관합니다.
+
+Reliability (신뢰성 정책)
+
+RELIABLE: 데이터 유실 없는 정확한 수신에 집중합니다.
+
+BEST_EFFORT: 데이터 손실 가능성이 있더라도 지연 없는 빠른 속도를 중시합니다.
+
+Durability (내구성 정책)
+
+TRANSIENT_LOCAL: 구독(Subscription) 생성 시점에 이미 발행되었던 과거 데이터까지 보관하여 전달합니다.
+
+VOLATILE: 구독 생성 이전의 데이터는 무효화합니다.
+
+Deadline / Lifespan / Liveliness
+
+주기에 따른 데이터 수발신 여부 확인(Deadline), 유효 시간 판정(Lifespan), 노드 및 토픽의 생사 확인(Liveliness)을 수행합니다.
