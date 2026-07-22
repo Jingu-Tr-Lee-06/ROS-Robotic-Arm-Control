@@ -1,1 +1,0 @@
-/home/leeji/ROS-Robotic-Arm-Control/WorkSpace_ROS/build/gong_basic/launch/hello.launch.py

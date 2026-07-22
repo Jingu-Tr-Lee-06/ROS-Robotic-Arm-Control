@@ -1,8 +1,0 @@
-Metadata-Version: 2.1
-Name: gong-basic
-Version: 0.0.0
-Summary: Kongju University ROS2 Basic Library
-Maintainer: leeji
-Maintainer-email: gidwjd2022@gmail.com
-License: Apache 2.0
-Provides-Extra: test
